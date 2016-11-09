@@ -1,12 +1,21 @@
 // JavaScript File
 $(document).ready(function()
 {
-    var defn = $(".defn dd");
+   
     var searchButton = $(".search");
+    var url = "request.php?q=";
     
     searchButton.click(function()
     {
-        alert(defn.html());  
-
+        //alert(defn.html());  
+         $.ajax({
+        url: url + "definition",
+        })
+        .done(function(data) 
+        {
+            alert($(data).text()); 
+        });
     });
+    
+    
 });
