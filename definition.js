@@ -24,8 +24,7 @@ $(document).ready(function()
         })
         .done(function(data) 
         {
-           // $("#result").html("<h2>Result</h2>")
-            $( "#result" ).html(data);
+           $( "#result" ).html(data);
         }).fail(function()// In the event request is not able to find request page
         {
             alert("ERROR");
@@ -33,11 +32,10 @@ $(document).ready(function()
     }
     
     
+    
     function xmlFunction(event)
     {
         event.preventDefault();
-        
-        
 
         $.ajax({
             url: "request.php?q=&all=true",
@@ -64,7 +62,7 @@ $(document).ready(function()
         })
         .fail(function()
         {
-            alert("error");
+            alert("XML ERROR");
         });
     }
     

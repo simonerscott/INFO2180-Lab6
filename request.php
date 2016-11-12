@@ -16,9 +16,9 @@ $definition =
 ];
 
 
-//print "<h3>" . strtoupper($query) . "</h3>";
-//print "<p>" . $definition[$query] . "</p>";
-
+/*print "<h3>" . strtoupper($query) . "</h3>";
+print "<p>" . $definition[$query] . "</p>";
+*/
 
 $xmldata = '<?xml version="1.0" encoding="UTF-8"?>
 

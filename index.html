@@ -3,6 +3,8 @@
     <head>
         <title>Definitions</title>
 		<meta charset="utf-8" />
+		
+		<link rel="stylesheet" type="text/css" href="definition.css" />
 
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
 		<script src="definition.js" type="text/javascript"></script>
@@ -10,14 +12,18 @@
     
     
     <body>
+        
+        <h1>Web Dictionary</h1>
+        
         <form action = "" method="post" name="form">
-            Term: <input type="text" name="term" id="term"/><br><br>
+            Term: <input type="text" name="term" id="term" placeholder="eg. bar"/><br><br>
             <button id="search" class ="search">Search</button>
             <button id="getAll" class ="getAll">Get All Definitions</button>            
         </form>
         
+        <h2>Result</h2>
         <div id = "result">
-            <h2>Result</h2>
+           
         </div>
         
     </body>
